@@ -312,18 +312,23 @@ function obtenerParametroURL(nombre) {
     return urlParams.get(nombre);
 }
 
-// Obtener el valor del parámetro 'nombre' de la URL
+        // Función para obtener el valor de un parámetro de la URL
+        function obtenerParametroURL(nombre) {
+    const urlParams = new URLSearchParams(window.location.search);
+    let parametro = urlParams.get(nombre);
+
+    // Si el parámetro existe, reemplaza los guiones (-) por espacios
+    return parametro ? parametro.replace(/-/g, " ") : null;
+}
+
+// Obtener el valor del parámetro 'invitado' de la URL
 const nombre = obtenerParametroURL('invitado');
 
 // Seleccionar el elemento <p> donde se mostrará el nombre
 const elementoNombre = document.getElementById('invitado');
 
-// Si hay un valor en el parámetro 'nombre', mostrarlo; de lo contrario, mostrar 'Invitado'
-		if (nombre) {
-			elementoNombre.textContent = nombre;
-		} else {
-			elementoNombre.textContent = '';
-		}
+// Si hay un valor en el parámetro 'invitado', mostrarlo con espacios; de lo contrario, dejarlo vacío
+elementoNombre.textContent = nombre ? nombre : '';
 
 
 </script>
