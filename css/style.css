@@ -666,7 +666,7 @@ a {
     left: 20px;
     width: 50px;
     height: 50px;
-    background-color: rgba(238, 206, 64, 0.9); /* Color dorado con transparencia */
+    background-color: rgb(255 133 250); /* Color dorado con transparencia */
     color: black;
     border: none;
     border-radius: 50%;
