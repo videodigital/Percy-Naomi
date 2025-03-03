@@ -484,7 +484,7 @@ body.no-scroll {
 	width: auto;
 	height: auto;
 	padding: 20px;
-	background-color: #d500ff9c;
+	background-color: #ff00f57a;
 	color: white;
 	border-radius: 20px;
 	font-size: 20px;
@@ -497,7 +497,7 @@ body.no-scroll {
     width: fit-content; /* Se ajusta al contenido */
     height: auto;
     padding: 20px;
-    background-color: #d500ff9c;
+    background-color: #ff00f57a;
     border-radius: 20px;
     font-size: 18px;
     color: white;
